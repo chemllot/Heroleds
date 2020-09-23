@@ -29,7 +29,7 @@ class ApiController extends Controller
         $leads->save();
 
         return response()->json([
-            "message" => "student record created"
+            "message" => "Leads record created"
         ],201);
 
     }
@@ -41,7 +41,7 @@ class ApiController extends Controller
         }
         else {
             return response()->json([
-                "message" => "Student ID not found"
+                "message" => "Leads ID not found"
             ],404);
         }
     }
@@ -78,7 +78,7 @@ class ApiController extends Controller
           ], 202);
         } else {
           return response()->json([
-            "message" => "Student not found"
+            "message" => "Leads not found"
           ], 404);
         }
       }
